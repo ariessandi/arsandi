@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="GetUser">
+      <implementation-class>Eshan.GetUser</implementation-class>
+    </service>
+    <service name="PostUser">
+      <implementation-class>Eshan.PostUser</implementation-class>
+    </service>
+    <service name="GetBooking">
+      <implementation-class>Eshan.GetBooking</implementation-class>
+    </service>
+    <service name="UpdateBooking">
+      <implementation-class>Eshan.UpdateBooking</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>
