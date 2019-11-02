@@ -41,7 +41,7 @@ public class GetBooking {
         String myUrl="jdbc:mysql://localhost:3306/cdcol";
         Class.forName(myDriver);
         Connection con = DriverManager.getConnection(myUrl,"root","");
-        String query="select bookingId,bookingName,paymentProofId,paymentApproved,lawyerId from booking WHERE paymentApproved='"+paymentApproved+"'";
+        String query="select bookingId,bookingName,paymentProofId,paymentApproved,lawyer.lawyerFullName from booking,lawyer WHERE lawyer.lawyerId=booking.lawyerId and paymentApproved='"+paymentApproved+"'";
         Statement st=con.createStatement();
         ResultSet rs= st.executeQuery(query);
         while(rs.next()){
@@ -51,7 +51,7 @@ public class GetBooking {
               v.addElement(rs.getString("bookingName"));
               v.addElement(rs.getInt("paymentProofId")); 
               v.addElement(rs.getInt("paymentApproved")); 
-              v.addElement(rs.getInt("lawyerId")); 
+              v.addElement(rs.getString("lawyerFullName")); 
             //Result="<UserID>"+UserID+"</UserID>,<Username>"+Username+"</Username>";
             
         }

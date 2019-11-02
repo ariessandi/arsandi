@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8087/wssandi/GetUser?wsdl" uri="wsdl/localhost_8087/wssandi/GetUser.wsdl"/>
+    <system systemId="http://localhost:8087/wssandi/GetUser?xsd=1" uri="wsdl/localhost_8087/wssandi/GetUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8087/wssandi/PostUser?wsdl" uri="wsdl/localhost_8087/wssandi/PostUser.wsdl"/>
+    <system systemId="http://localhost:8087/wssandi/PostUser?xsd=1" uri="wsdl/localhost_8087/wssandi/PostUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8087/wssandi/GetBooking?wsdl" uri="wsdl/localhost_8087/wssandi/GetBooking.wsdl"/>
+    <system systemId="http://localhost:8087/wssandi/GetBooking?xsd=1" uri="wsdl/localhost_8087/wssandi/GetBooking.xsd_1.xsd"/>
+    <system systemId="http://localhost:8087/wssandi/UpdateBooking?wsdl" uri="wsdl/localhost_8087/wssandi/UpdateBooking.wsdl"/>
+    <system systemId="http://localhost:8087/wssandi/UpdateBooking?xsd=1" uri="wsdl/localhost_8087/wssandi/UpdateBooking.xsd_1.xsd"/>
+    <system systemId="http://localhost:8087/wssandi/GetBookingDetail?wsdl" uri="wsdl/localhost_8087/wssandi/GetBookingDetail.wsdl"/>
+    <system systemId="http://localhost:8087/wssandi/GetBookingDetail?xsd=1" uri="wsdl/localhost_8087/wssandi/GetBookingDetail.xsd_1.xsd"/>
+</catalog>

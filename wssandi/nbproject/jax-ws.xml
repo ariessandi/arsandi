@@ -13,6 +13,9 @@
     <service name="UpdateBooking">
       <implementation-class>Eshan.UpdateBooking</implementation-class>
     </service>
+    <service name="GetBookingDetail">
+      <implementation-class>Eshan.GetBookingDetail</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>

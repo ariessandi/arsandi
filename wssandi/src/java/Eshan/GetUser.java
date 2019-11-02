@@ -33,21 +33,22 @@ public class GetUser {
      */
     String Result ="No record Found";
     @WebMethod(operationName = "getUser")
-    public Vector getUser(@WebParam(name = "UserID") int UserID) {
+    public Vector getUser(@WebParam(name = "lawyerId") int UserID) {
         Vector v=new Vector();
         try{
         String myDriver="com.mysql.jdbc.Driver";
         String myUrl="jdbc:mysql://localhost:3306/cdcol";
         Class.forName(myDriver);
         Connection con = DriverManager.getConnection(myUrl,"root","");
-        String query="select userID,username from user WHERE userID='"+UserID+"'";
+        String query="select lawyerId,lawyerFullName from lawyer ";
         Statement st=con.createStatement();
         ResultSet rs= st.executeQuery(query);
         while(rs.next()){
             //int UserId = rs.getInt("userID");
             //String Username = rs.getString("username");
-              v.addElement(rs.getInt("userID")); 
-              v.addElement(rs.getString("username")); 
+              v.addElement(rs.getInt("lawyerId")); 
+              v.addElement(rs.getString("lawyerFullName")); 
+              //v.addElement(rs.getString("lawyerPhoneNumber")); 
             //Result="<UserID>"+UserID+"</UserID>,<Username>"+Username+"</Username>";
             
         }

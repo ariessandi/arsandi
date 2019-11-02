@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-GetUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetUser"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetUser" destdir="${build.generated.dir}/jax-wsCache/GetUser" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetUser/wsdl/localhost_8087/wssandi/GetUser.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8087/wssandi/GetUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetUser/wsdl/localhost_8087/wssandi/GetUser.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetUser" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/eshan"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetUser"/>
+    </target>
+    <target name="wsimport-client-PostUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PostUser"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PostUser" destdir="${build.generated.dir}/jax-wsCache/PostUser" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/PostUser/wsdl/localhost_8087/wssandi/PostUser.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8087/wssandi/PostUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/PostUser/wsdl/localhost_8087/wssandi/PostUser.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PostUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PostUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PostUser" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/eshan"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/PostUser"/>
+    </target>
+    <target name="wsimport-client-GetBooking" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetBooking"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetBooking" destdir="${build.generated.dir}/jax-wsCache/GetBooking" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetBooking/wsdl/localhost_8087/wssandi/GetBooking.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8087/wssandi/GetBooking?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetBooking/wsdl/localhost_8087/wssandi/GetBooking.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetBooking"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetBooking">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetBooking" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/eshan"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetBooking"/>
+    </target>
+    <target name="wsimport-client-UpdateBooking" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UpdateBooking"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UpdateBooking" destdir="${build.generated.dir}/jax-wsCache/UpdateBooking" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateBooking/wsdl/localhost_8087/wssandi/UpdateBooking.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8087/wssandi/UpdateBooking?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateBooking/wsdl/localhost_8087/wssandi/UpdateBooking.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UpdateBooking"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UpdateBooking">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UpdateBooking" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/eshan"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/UpdateBooking"/>
+    </target>
+    <target name="wsimport-client-GetBookingDetail" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetBookingDetail"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetBookingDetail" destdir="${build.generated.dir}/jax-wsCache/GetBookingDetail" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GetBookingDetail/wsdl/localhost_8087/wssandi/GetBookingDetail.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8087/wssandi/GetBookingDetail?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GetBookingDetail/wsdl/localhost_8087/wssandi/GetBookingDetail.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetBookingDetail"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetBookingDetail">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetBookingDetail" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/eshan"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GetBookingDetail"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-GetUser, wsimport-client-PostUser, wsimport-client-GetBooking, wsimport-client-UpdateBooking, wsimport-client-GetBookingDetail"/>
+</project>
